@@ -307,10 +307,10 @@ header .navbar ul li a:hover {
   background-color: #0685da;
 }
 .social-icons a.github:hover {
-  background-color: #0e0e0e;
+  background-color: #786060;
 }
-.social-icons a.twitter:hover {
-  background-color: #00aced;
+.social-icons a.youtube:hover {
+  background-color: #f70404;
 }
 .social-icons a.linkedin:hover {
   background-color: #007bb6;
