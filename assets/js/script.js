@@ -62,7 +62,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "MOHAMED EL MACHHOUNE";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
@@ -74,7 +74,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "UX/UI Designing", "web development, MERN Development"],
+    strings: ["Frontend development", "Backend development", "Web designing", "UX/UI Designing", "MERN Development"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -164,15 +164,6 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 // <!-- tilt js effect ends -->
 
 
-// pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
-// pre loader end
 
 // disable developer mode
 document.onkeydown = function (e) {
