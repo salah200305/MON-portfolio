@@ -40,22 +40,23 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("mailto:business.elmachhoune@gmail.com");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
-    // <!-- emailjs to mail contact form data -->
+// Initialize EmailJS with your Public Key
+emailjs.init("jTfIb_4-rqPFOl9-C"); // Replace with your actual EmailJS Public Key 
+
+$("#contact-form").submit(function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    emailjs.sendForm("service_apskyxg","template_dyrrg8w", this)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById("contact-form").reset();
+            alert("Form Submitted Successfully");
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert("Form Submission Failed! Try Again");
+        });
+});
 
 });
 
@@ -74,7 +75,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Web designing", "UX/UI Designing", "Full-Stack Development"],
+    strings: ["Web designing", "UX/UI Designing", "Full-Stack Web Development"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
